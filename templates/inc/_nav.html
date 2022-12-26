@@ -2,7 +2,7 @@
 	<a
 		class="navbar-brand"
 		href="{% url 'home' %} "
-		>Navbar</a
+		>Мой новостной блог</a
 	>
 	<button
 		class="navbar-toggler"
@@ -34,6 +34,14 @@
 					class="nav-link"
 					href="{% url 'add_news' %}"
 					>Добавить новость</a
+				>
+			</li>
+
+			<li class="nav-item">
+				<a
+					class="nav-link"
+					href="{% url 'test' %}"
+					>Отправить сообщение</a
 				>
 			</li>
 			{%endif%}
