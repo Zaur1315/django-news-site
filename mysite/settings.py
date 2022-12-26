@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "debug_toolbar",
     'ckeditor',
     'ckeditor_uploader',
+    'captcha',
     'news.apps.NewConfig',
 
 ]
@@ -221,5 +222,16 @@ CKEDITOR_CONFIGS = {
             'dialogui',
             'elementspath'
         ]),
+    }
+}
+
+
+CAPTHA_NOISE_FUNCTIONS = None
+
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': os.path.join(BASE_DIR, 'django_cache')
     }
 }
