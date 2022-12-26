@@ -4,6 +4,7 @@
 <div class="card mb-3">
 	<div class="card-header">Категория: {{ item.category }}</div>
 	<div class="card-body">
+		{% autoescape off %}
 		<div class="media">
 			{% if item.photo %}
 			<img
@@ -30,6 +31,7 @@
 				>
 			</div>
 		</div>
+		{% endautoescape %}
 	</div>
 	<div class="card-footer text-muted">
 		{{ item.creates_at|date:"Y-m-d H:i" }}

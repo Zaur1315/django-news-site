@@ -7,6 +7,8 @@
 		<a href="{{ item.category.get_absolute_url }}">{{item.category}}</a>
 	</div>
 	<div class="card-body">
+		{% autoescape off %}
+
 		<div class="media">
 			{% if item.photo %}
 			<img
@@ -33,6 +35,7 @@
 				>
 			</div>
 		</div>
+		{% endautoescape %}
 	</div>
 	<div class="card-footer text-muted">
 		{{ item.creates_at|date:"Y-m-d H:i" }}
