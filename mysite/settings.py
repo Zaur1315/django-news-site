@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'ckeditor_uploader',
     'captcha',
     'news.apps.NewConfig',
+    'mptt',
     'testapp.apps.TestappConfig',
 
 
@@ -237,3 +238,6 @@ CACHES = {
         'LOCATION': os.path.join(BASE_DIR, 'django_cache')
     }
 }
+
+
+MPTT_ADMIN_LEVEL_INDENT = 20
