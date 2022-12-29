@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'ckeditor_uploader',
     'captcha',
     'news.apps.NewConfig',
+    'testapp.apps.TestappConfig',
+
 
 ]
 
